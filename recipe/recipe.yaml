@@ -11,7 +11,7 @@ source:
 
 build:
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -30,8 +30,8 @@ requirements:
 tests:
   - python:
       imports:
-      - numba_cfunc_compiler
-      - numba_cfunc_compiler.numba_rt
+        - numba_cfunc_compiler
+        - numba_cfunc_compiler.numba_rt
       pip_check: true
 
 about:

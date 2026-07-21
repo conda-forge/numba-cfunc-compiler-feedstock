@@ -11,10 +11,15 @@ source:
 
 build:
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
+    - if: build_platform != host_platform
+      then:
+        - python
+        - cross-python_${{ host_platform }}
+        - hatch-cpp
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
   host:

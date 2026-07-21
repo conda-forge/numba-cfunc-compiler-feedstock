@@ -19,6 +19,7 @@ requirements:
       then:
         - python
         - cross-python_${{ host_platform }}
+        - hatch-cpp
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
   host:

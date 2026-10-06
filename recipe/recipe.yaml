@@ -24,6 +24,7 @@ requirements:
         - cross-python_${{ host_platform }}
         - hatch-cpp
     - ${{ compiler('c') }}
+    - ${{ compiler('cxx') }}
     - ${{ stdlib('c') }}
   host:
     - python

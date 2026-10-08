@@ -10,7 +10,7 @@ source:
   sha256: 45fe6aff634e361a184e9c919fcc7ab478affb4c18a643e629c2b04b0231d712
 
 build:
-  number: 0
+  number: 1
   python:
     version_independent: true
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -24,6 +24,7 @@ requirements:
         - cross-python_${{ host_platform }}
         - hatch-cpp
     - ${{ compiler('c') }}
+    - ${{ compiler('cxx') }}
     - ${{ stdlib('c') }}
   host:
     - python

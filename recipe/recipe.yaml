@@ -1,5 +1,5 @@
 context:
-  version: "0.3.1"
+  version: "0.4.0"
 
 package:
   name: numba-cfunc-compiler
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/n/numba-cfunc-compiler/numba_cfunc_compiler-${{ version }}.tar.gz
-  sha256: 9456b35e7763b1679e95a9fa4afd5613a9bd3a4b65062782f1193d851a3f206a
+  sha256: 0ed5249e8b8859e6a5e33ea01828e40a0058075c715b16b031a1220907e63b14
 
 build:
   number: 0
